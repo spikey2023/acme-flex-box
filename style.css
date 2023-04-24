@@ -92,7 +92,37 @@ form > div > select {
     box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
 
+    header > nav{
+        flex-direction: column;
+        align-items:flex-start;
+        
+    }
+    header > nav > a {
+        margin-top: 1rem;
+
+    }
+
+    form {
+        width: 100%
+    }
+    form > div {
+        flex-direction: column;
+                
+    }
+    form > div > label {
+        margin-bottom: 1rem;
+    }
+
+    .user_tiles > div {
+        width: calc(100% - 2rem);
+    }
+}
+ 
 
 
 
